@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>Student From || Practic Project</title>
+    <!-- External CSS file linked for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Main Container root start-->
+    <div class="root">
+        <div class="container-of-page">
+            <!-- Page name/title section -->
+            <div class="pagename">
+                <h2>Student Registration Form</h2>
+            </div>
+            <div class="pagebody">
+                <!-- Caption and instructions for the form -->
+                <div class="caption">
+                    <h3>Please enter relevent information</h3>
+                    <h6>Mandatory Field*</h6>
+                </div>
+                <div class="left-form">
+                    <!-- Registration form starts here -->
+                    <form action="#">
+                        <div class="left-from-cption">
+                            <!-- District selection with explanation -->
+                            <h3><strong>District</strong>(<small>Institute District: Where you want to do your
+                                    course*</small>)</h3>
+                            <!-- Dropdown for selecting district -->
+                            <select name="district" id="district" required>
+                                <option value="">--Select District--</option>
+                                <!-- List of districts as options -->
+                                <!-- ...district options... -->
+                            </select>
+                            <div class="left-from-cption">
+                                <!-- Course selection -->
+                                <h3>Course*</h3>
+                            </div>
+                            <select name="Course" id="course" required>
+                                <option value="">--Select One--</option>
+                                <!-- Course options -->
+                                <option value="Web-Design-&-Development">Web Design & Development - 2020 (2020,February)
+                                </option>
+                                <option value="Graphic-Design">Graphic Design - 2020 (2020,February)</option>
+                                <option value="Digital-Marketing">Digital Marketing - 2020 (2020,February)</option>
+                            </select>
+                            <div class="nameinput-fild">
+                                <!-- Student, Father, Mother name fields -->
+                                <label for="student-name">
+                                    Student Name*</label>
+                                <input type="text" name="student-name" id="student-name" required>
+                                <label for="Father-Name">Father Name*</label>
+                                <input type="text" name="Father-Name" id="Father-Name" required>
+                                <label for="Mother-Name">Mother Name*</label>
+                                <input type="text" name="Mother-Name" id="Mother-Name" required>
+                            </div>
+                            <div class="birthday">
+                                <!-- Date of Birth selection (day, month, year) -->
+                                <label>Date of Birth *</label>
+                                <div style="display: flex; gap: 10px">
+                                    <label for="dob-day">Day:</label>
+                                    <select id="dob-day" name="dob-day">
+                                        <option value="">Select Day</option>
+                                        <!-- Day options 1-31 -->
+                                    </select>
+                                    <label for="dob-month">Month:</label>
+                                    <select id="dob-month" name="dob-month">
+                                        <option value="">Select Month</option>
+                                        <!-- Month options 1-12 -->
+                                    </select>
+                                    <label for="dob-year">Year:</label>
+                                    <select id="dob-year" name="dob-year">
+                                        <option value="">Select Year</option>
+                                        <!-- Year options 1980-2025 -->
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="gender">
+                                <!-- Gender radio buttons -->
+                                <label for="">Gender*</label>
+                                <strong>
+                                    <label for="male">Male</label>
+                                </strong>
+                                <input type="radio" name="gender" id="male" required>
+                                <strong><label for="female">Female</label></strong>
+                                <input type="radio" name="gender" id="female" required>
+                            </div>
+                            <div class="PhysicallyHandicapped">
+                                <!-- Physically Handicapped radio buttons -->
+                                <label for="">Physically Handicapped*</label>
+                                <strong><label for="yes">Yes</label></strong>
+                                <input type="radio" name="PhysicallyHandicapped" id="yes" required>
+                                <strong><label for="no">No</label></strong>
+                                <input type="radio" name="PhysicallyHandicapped" id="no" required>
+                            </div>
+                            <div class="email-number">
+                                <!-- Email and phone number fields with examples -->
+                                <label for="email">Email*</label>
+                                <input type="email" name="email" id="email" required>
+                                <label for="">(e.g: example@mail.com)</label>
+                                <label for="phone-number">Phone Number*</label>
+                                <input type="number" name="phone-number" id="phone-number" required>
+                                <label for="">(e.g: 0155123456)</label>
+                            </div>
+                        </div>
+                        <div class="right-form">
+                            <div class="identification">
+                                <!-- Identification type and number fields -->
+                                <label for="">Identification Type*</label>
+                                <select name="IdentificationType" id="IdentificationType" required>
+                                    <option value="">Select One</option>
+                                    <option value="Birth Certificate">Birth Certificate No.</option>
+                                    <option value="NID">National Id No.</option>
+                                </select>
+                                <label for="idinfo">Identification No. (Must be 10 digits for new NID or 17 digits for
+                                    old NID. If your National ID is 13 digits, then please add your birth year with the
+                                    ID as prefix. Example: 1980XXXXXXXXXXXXX)*</label>
+                                <input type="number" name="idinfo" id="idinfo" required>
+                            </div>
+                            <div class="address">
+                                <!-- Home district, upazila, address, and post office fields -->
+                                <label for="Home District">Home District*</label>
+                                <select name="Home District" id="Home District" required>
+                                    <option value="">--Select District--</option>
+                                    <!-- ...district options... -->
+                                </select>
+                                <label for="Upazila*">Upazila*</label>
+                                <select name="upazila" id="upazila">
+                                    <option value="">Select One</option>
+                                    <!-- Upazila options for various divisions -->
+                                </select>
+                                <label for="Village/House No./Road No./Other Alternative*">Village/House No./Road
+                                    No./Other Alternative*</label>
+                                <input type="text" id="Village/House No./Road No./Other Alternative*"
+                                    name="Village/House No./Road No./Other Alternative*" required>
+                                <label for="Post Office*">Post Office*</label>
+                                <input type="number" name="Post Office*" id="Post Office*" required>
+                            </div>
+                            <div class="Educatioinal">
+                                <!-- Educational qualification dropdown -->
+                                <label for="Educatioinal">Educational Qualification* <small>(Higher Level)</small></label>
+                                <select name="Educatioinal" id="Educatioinal" required>
+                                    <option value="">--Select One--</option>
+                                    <!-- Education level options -->
+                                </select>
+                            </div>
+                            <div class="opcompa">
+                                <!-- Computer ownership radio buttons -->
+                                <label for="Have any computer?*">Have any computer?*</label>
+                                <input type="radio" name="Have any computer?*" value="Yes" id="yes1" required>
+                                <strong><label for="yes1">Yes</label></strong>
+                                <input type="radio" name="Have any computer?*" value="No" id="no1" required>
+                                <strong><label for="no1">No</label></strong>
+                            </div>
+                            <div class="file-poto-uplode">
+                                <!-- Photograph and signature file upload fields -->
+                                <label for="Photograph*">Photograph*</label>
+                                <input type="file" id="Photograph*" name="Photograph*" accept="image/*" required>
+                                <label for="file-tip">(File type must be jpg or jpeg or png. Maximum file size 2 mb.)</label>
+                                <label for="Signature*">Signature*</label>
+                                <input type="file" id="Signature*" name="Signature*" accept="image/*" required>
+                                <label for="file-tip">(File type must be jpg or jpeg or png. Maximum file size 2 mb.)</label>
+                            </div>
+                            <div class="submit-btn">
+                                <!-- Submit button for the form -->
+                                <input type="submit" value="Submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Main Container root end-->
+</body>
+
+</html>

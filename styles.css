@@ -1,0 +1,283 @@
+/* ============================
+   Reset & Base Styles
+============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Roboto', Arial, sans-serif; */
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* ============================
+   Headings
+============================ */
+h2 {
+  font-size: 28px;
+  color: #ec8701;
+  /* font-family: Myriad, Tahoma; */
+  font-weight: 410;
+  margin-bottom: 15px;
+  font-family: Myriad, Tahoma;
+  letter-spacing: 1px;
+  border-bottom: 1px solid rgb(229, 229, 229); font-size: 150%;
+  color: rgb(236, 135, 1);
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+#h3idrelivent {
+    font-weight: 400;   
+    font-size: 20px;
+  color: rgb(51, 51, 51);
+
+      font-family: 'Barlow Condensed', sans-serif;
+      display: inline;
+
+
+}
+
+h3 {
+  color: #666666;
+  font-family: "Open Sans", Tahoma;
+
+  font-size: 18px;
+  font-weight: normal;
+}
+
+h6 {
+  font-size: 10px;
+  color: #d32f2f;
+  font-weight: 400;
+  margin-bottom: 15px;
+      font-family: "Open Sans", Tahoma;
+}
+
+/* ============================
+   Root Container
+============================ */
+.root {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+.container-of-page {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.pagebody {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+/* ============================
+   Captions
+============================ */
+.caption {
+  width: 100%;
+  
+}
+
+.caption h3 {
+  font-weight: 600;
+}
+
+.caption h6 {
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 0;
+}
+
+/* ============================
+   Form Layout
+============================ */
+form {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.left-form,
+.right-form {
+  flex: 1;
+  min-width: 320px;
+}
+
+/* ============================
+   Labels & Inputs
+============================ */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #666666;
+  font-family: "Open Sans", Tahoma;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 10px 12px; 
+  font-size: 15px;
+  background-color: #fdfdfd;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+input[type="file"]:focus {
+  border-color: #0b3d91;
+  box-shadow: 0 0 5px rgba(11, 61, 145, 0.3);
+  outline: none;
+}
+
+input[type="radio"] {
+  margin-left: 5px;
+  margin-right: 5px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* ============================
+   Birthday & Special Sections
+============================ */
+
+
+.gender,
+.PhysicallyHandicapped,
+.opcompa,
+.file-poto-uplode {
+  margin-bottom: 15px;
+}
+
+.file-poto-uplode label {
+  font-size: 13px;
+  color: #666;
+}
+
+.Educatioinal select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #cfd8dc;
+}
+
+/* ============================
+   Submit Button
+============================ */
+.submit-btn{
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#d8d8d8');
+    border: 1px solid #cbcbcb;
+    padding: 3px 3px 6px 12px;
+    cursor: pointer;
+    font-size: 120%;
+    margin-top: 6px;
+    -webkit-box-shadow: 0 2px 2px rgba(255, 255, 255, 0.4) inset, 0 -2px 1px rgba(0, 0, 0, 0.2) inset, 0 0 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 2px 2px rgba(255, 255, 255, 0.4) inset, 0 -2px 1px rgba(0, 0, 0, 0.2) inset, 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px rgba(255, 255, 255, 0.4) inset, 0 -2px 1px rgba(0, 0, 0, 0.2) inset, 0 0 5px rgba(0, 0, 0, 0.1);
+    color: #666666;
+}
+
+/* ============================
+   Responsive Design
+============================ */
+@media (max-width: 900px) {
+  form {
+    flex-direction: column;
+  }
+}
+
+  #fieldset-castom {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: fit-content;
+  }
+
+  legend {
+    font-weight: normal;
+    padding: 0 5px;
+    color: black;
+    font-family: "Open Sans", Tahoma;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td {
+    padding: 5px 15px;
+    vertical-align: top;
+    font-family: "Open Sans", Tahoma;
+    color: #666666;
+
+  }
+
+  td label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  select {
+    padding: 5px;
+    width: 100%;
+    color: #444444;
+  }
+  .castom-label-sl{
+    display: inline;
+font-weight: 600;
+  }
+  .castom-label{
+    display: inline;
+  }
+
+.lamu{
+    font-size: 25px;
+}
+.file{
+position: relative;
+right: 10px;
+}
+input, select, textarea {
+  border: 1px solid #ddd;   
+  padding: 6px 10px;
+         
+  background: #fff;        
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+
+
+  hr.dashed {
+
+    border: none;         
+    border-top: 2px dashed #000;  
+    height: 0;             
+    margin: 20px 0; 
+    /* display: inline;        */
+  }
+  .lain-ino{
+    border: none !important;
+    border-top: 1px dashed #ccc !important;
+    padding: 0px !important;
+    margin-bottom: 5px;
+  }
